@@ -10,6 +10,7 @@ requests = "*"
 bs4 = "*"
 pydantic = "*"
 mypy = "*"
+pytest = "*"
 
 [requires]
 
