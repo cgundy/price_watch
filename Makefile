@@ -10,3 +10,9 @@ build:
 
 requirements.txt:
 	pipenv lock -r > requirements.txt
+
+lint: build
+	$(DOCKER_RUN) mypy price_watch automation tests
+
+test: build
+	$(DOCKER_RUN) pytest
